@@ -1,0 +1,8 @@
+DSTR=$(date '+%Y%m%d')
+
+IFILE="ana.ipynb"
+OFILE="_slides/_Shanghai_$DSTR"
+
+echo "output file: $OFILE"
+
+jupyter nbconvert $IFILE --no-input --to slides --execute --output $OFILE
